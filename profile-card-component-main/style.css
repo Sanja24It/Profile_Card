@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+body {
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: left -18rem top -27rem, bottom -27rem right -18rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  background-color: #fff;
+  width: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.938rem;
+  box-shadow: 0 0.188rem 0.625rem rgb(0 0 0 / 0.2);
+  position: relative;
+}
+.color {
+  flex-basis: 6.25rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  border-radius: 0.938rem 0.938rem 0 0;
+}
+
+.image {
+  align-self: center;
+}
+
+.content {
+  flex-basis: 12.5rem;
+}
+
+.image img {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10.5rem;
+  left: 6rem;
+  border: 0.313rem solid #fff;
+}
+
+.avatarData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatarData h1 {
+  margin: 5rem 0.2rem 0.2rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+.age {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.avatarData h2 {
+  font-size: 0.8rem;
+  margin: 0.2rem;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.followers {
+  border-top: 0.04rem solid hsl(228, 9%, 90%);
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-weight: 700;
+  align-self: center;
+}
+.category {
+  color: hsl(227, 10%, 46%);
+  font-size: 0.6rem;
+  font-weight: 400;
+  align-self: center;
+}
+
+@media screen and (min-width: 23.438rem) and(max-width: 42.375rem) {
+  .main {
+    width: 80%;
+  }
+}
